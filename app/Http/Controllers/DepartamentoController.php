@@ -16,7 +16,7 @@ class DepartamentoController extends Controller
         $NOMBRE_DEPARTAMENTO = $request->get('NOMBRE_DEPARTAMENTO');
 
         $resultado=DB::select("CALL INSERTAR_DEPARTAMENTO(?,@RESULTADO)", [$NOMBRE_DEPARTAMENTO]);
-        return view('/departamento/departamento')->with('resultado', $resultado);
+        return redirect('/ld')->with('resultado', $resultado);
     }
 }
 
