@@ -51,4 +51,10 @@ Route::get('/departamento/seleccionar/{ID_DEPARTAMENTO}', [DepartamentoControlle
 Route::post('/departamento', [DepartamentoController::class, 'departamento']);
 Route::post('/departamento/editar', [DepartamentoController::class, 'editar']);
 
+Route::get('/producto', [ProductoController::class, 'show']);
+Route::get('/producto/borrar/{ID_PRODUCTO}', [ProductoController::class, 'borrar']);
+Route::get('/producto/seleccionar/{ID_PRODUCTO}', [ProductoController::class, 'seleccionar']);   
+
+Route::post('/producto', [ProductoController::class, 'producto']);
+Route::post('/producto/editar', [ProductoController::class, 'editar']);
 
