@@ -49,7 +49,7 @@
 		@auth
 		<button class="administracion" onclick="window.location.href='/departamento'">Departamentos</button><br>
 		<button class="administracion" onclick="window.location.href='/categoria'">Categorias</button><br>
-		<button class="administracion">3</button><br>
+		<button class="administracion" onclick="window.location.href='/producto'">Producto</button><br>
 		<button class="administracion">4</button><br>
 		<button class="administracion">5</button><br>
 		<button class="administracion">6</button>
