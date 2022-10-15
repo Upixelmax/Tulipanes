@@ -43,16 +43,12 @@ Route::get('/categoria/seleccionar/{ID_CATEGORIA}', [CategoriaController::class,
 Route::post('/categoria', [CategoriaController::class, 'categoria']);
 Route::post('/categoria/editar', [CategoriaController::class, 'editar']);
 
-<<<<<<< HEAD:tulipanes-git/routes/web.php
+
 Route::get('/departamento', [DepartamentoController::class, 'show']);
 Route::get('/departamento/borrar/{ID_DEPARTAMENTO}', [DepartamentoController::class, 'borrar']);
 Route::get('/departamento/seleccionar/{ID_DEPARTAMENTO}', [DepartamentoController::class, 'seleccionar']); 
 
 Route::post('/departamento', [DepartamentoController::class, 'departamento']);
 Route::post('/departamento/editar', [DepartamentoController::class, 'editar']);
-=======
-Route::get('/ld', [ListDepartamentoController::class, 'show']);
 
 
-
->>>>>>> c3502e9a4ecd46ec914fed3795ced58a08df1856:routes/web.php
