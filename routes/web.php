@@ -44,6 +44,6 @@ Route::post('/categoria', [CategoriaController::class, 'categoria']);
 
 Route::get('/ld', [ListDepartamentoController::class, 'show']);
 
-
+PENEEEEEEEEEEEEE
 
 
