@@ -50,5 +50,3 @@ Route::get('/departamento/seleccionar/{ID_DEPARTAMENTO}', [DepartamentoControlle
 
 Route::post('/departamento', [DepartamentoController::class, 'departamento']);
 Route::post('/departamento/editar', [DepartamentoController::class, 'editar']);
-
-
