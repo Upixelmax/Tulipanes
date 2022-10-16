@@ -7,6 +7,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LogoutController;
 use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\CategoriaController;
+use App\Http\Controllers\ProductoController;
 
 
 
@@ -50,8 +51,6 @@ Route::get('/departamento/seleccionar/{ID_DEPARTAMENTO}', [DepartamentoControlle
 
 Route::post('/departamento', [DepartamentoController::class, 'departamento']);
 Route::post('/departamento/editar', [DepartamentoController::class, 'editar']);
-<<<<<<< HEAD
-=======
 
 Route::get('/producto', [ProductoController::class, 'show']);
 Route::get('/producto/borrar/{ID_PRODUCTO}', [ProductoController::class, 'borrar']);
@@ -60,4 +59,11 @@ Route::get('/producto/seleccionar/{ID_PRODUCTO}', [ProductoController::class, 's
 Route::post('/producto', [ProductoController::class, 'producto']);
 Route::post('/producto/editar', [ProductoController::class, 'editar']);
 
->>>>>>> 797d098ebb497bda32111d202284e64b4dab87c8
+
+
+Route::get('/producto/seleccionar_mover/{ID_PRODUCTO}', [ProductoController::class, 'seleccionar_mover']);   
+
+
+
+
+
