@@ -51,6 +51,10 @@ Route::get('/departamento/seleccionar/{ID_DEPARTAMENTO}', [DepartamentoControlle
 
 Route::post('/departamento', [DepartamentoController::class, 'departamento']);
 Route::post('/departamento/editar', [DepartamentoController::class, 'editar']);
+<<<<<<< HEAD
+
+=======
+>>>>>>> d2643994f1a030d18993871e7a66c0597f04dc1e
 
 Route::get('/producto', [ProductoController::class, 'show']);
 Route::get('/producto/borrar/{ID_PRODUCTO}', [ProductoController::class, 'borrar']);
@@ -61,6 +65,8 @@ Route::post('/producto/editar', [ProductoController::class, 'editar']);
 
 
 
+<<<<<<< HEAD
+=======
 Route::get('/producto/seleccionar_mover/{ID_PRODUCTO}', [ProductoController::class, 'seleccionar_mover']);   
 
 
@@ -68,3 +74,4 @@ Route::post('/producto/mover', [ProductoController::class, 'mover']);
 
 
 
+>>>>>>> d2643994f1a030d18993871e7a66c0597f04dc1e
