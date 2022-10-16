@@ -84,7 +84,7 @@
 				<td>
                     <button id="borrar" class="btn btn-round" onclick="window.location.href='/producto/borrar/{{$producto->ID_PRODUCTO}}'">Borrar</i></button>
                     <button id="editar" class="btn btn-round" onclick="window.location.href='/producto/seleccionar/{{$producto->ID_PRODUCTO}}'">Editar</i></button>
-					
+					<button id="mover" class="btn btn-round" onclick="window.location.href='/producto/seleccionar_mover/{{$producto->ID_PRODUCTO}}'">Mover</i></button>
 				</td>	
 			</tr>
 			@endforeach

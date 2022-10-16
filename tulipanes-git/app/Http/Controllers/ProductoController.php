@@ -49,4 +49,9 @@ class ProductoController extends Controller
         return redirect('/producto')->with('resultado', $resultado);
     }
 
+    public function seleccionar_mover($ID_PRODUCTO){
+        $producto=DB::select("SELECT * FROM PRODUCTO WHERE ID_PRODUCTO = ?", [$ID_PRODUCTO]);
+        return view('producto.mover_producto')->with('producto',$producto);
+    }
+
 }
