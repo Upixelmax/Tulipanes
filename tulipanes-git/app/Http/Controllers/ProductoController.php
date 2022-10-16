@@ -54,4 +54,13 @@ class ProductoController extends Controller
         return view('producto.mover_producto')->with('producto',$producto);
     }
 
+    public function mover(Request $request){
+        $PRODUCTO_INVENTARIO = $request->get('PRODUCTO_INVENTARIO');
+        $STOCK_INVENTARIO = $request->get('STOCK_INVENTARIO');
+        $DEPARTAMENTO_INVENTARIO = $request->get('DEPARTAMENTO_INVENTARIO');
+
+        $resultado=DB::select("CALL INSERTAR_INVENTARIO(?,?,?,@RESULTADO)", [$PRODUCTO_INVENTARIO,$STOCK_INVENTARIO,$DEPARTAMENTO_INVENTARIO]);
+        return redirect('/producto')->with('resultado', $resultado);
+    }  
+
 }
