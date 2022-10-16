@@ -62,5 +62,6 @@ Route::post('/producto/editar', [ProductoController::class, 'editar']);
 Route::get('/producto/seleccionar_mover/{ID_PRODUCTO}', [ProductoController::class, 'seleccionar_mover']);   
 
 
+Route::post('/producto/mover', [ProductoController::class, 'mover']);
 
 

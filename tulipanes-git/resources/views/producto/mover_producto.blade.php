@@ -38,46 +38,36 @@
 <div class="row">.</div>
 <div class="row">.</div>
 <div class="row">.</div>
+<div class="row">
+	<div class="col-1"></div>
+	<div class="col-10">
+		<body>
+			<form action="/producto/mover" method="POST">
+				@csrf
+				@foreach($producto as $pro)
+				<div class="mb-3">
+				<label for="formGroupExampleInput" class="form-label">Id Producto</label>
+				<input type="number" name="PRODUCTO_INVENTARIO" value='{{$pro->ID_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+				</div>
+				<div class="mb-3">
+				<label for="formGroupExampleInput" class="form-label">Nombre Producto</label>
+				<input type="text" name="NOMBRE_PRODUCTO" value='{{$pro->NOMBRE_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+				</div>
+				<div class="mb-3">
+				<label for="formGroupExampleInput" class="form-label">Stock Producto</label>
+				<input type="number" name="STOCK_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Debe ser menor o igual al stock del producto">
+				</div>
+				<div class="mb-3">
+				<label for="formGroupExampleInput" class="form-label">departamento Destino</label>
+				<input type="number" name="DEPARTAMENTO_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Departamento">
+				</div>	
+				@endforeach
+				<input type="submit" value="Editar">
 
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE-edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Mover Producto</title>
-</head>
+			</form>
 
-<body>
-	<form action="/producto/editar" method="POST">
-		@csrf
-		@foreach($producto as $pro)
-        <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Id Producto</label>
-        <input type="number" name="PRODUCTO_INVENTARIO" value='{{$pro->ID_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
-        <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Nombre Producto</label>
-        <input type="text" name="NOMBRE_PRODUCTO" value='{{$pro->NOMBRE_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
-        <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">Stock Producto</label>
-        <input type="number" name="STOCK_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Debe ser menor o igual al stock del producto">
-        </div>
-        <div class="mb-3">
-        <label for="formGroupExampleInput" class="form-label">departamento Destino</label>
-        <input type="number" name="DEPARTAMENTO_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Departamento">
-        </div>
-        <h5>ID PRODUCTO</h5>
-		<input type="number" name="PRODUCTO_INVENTARIO" value='{{$pro->ID_PRODUCTO}}' readonly>
-        <H5>NOMBRE PRODUCTO</H5>
-		<input type="text" name="NOMBRE_PRODUCTO"value='{{$pro->NOMBRE_PRODUCTO}}' >
-        <H5>STOCK</H5>
-        <input type="number" name="STOCK_INVENTARIO">
-        <H5>DEPARTAMENTO DESTINO</H5>
-        <input type="number" name="DEPARTAMENTO_INVENTARIO" >
-		
-		@endforeach
-		<input type="submit" value="Editar">
-
-	</form>
-
-</body>
+		</body>
+	</div>
+	<div class="col-1"></div>
+	
+</div>
