@@ -40,11 +40,16 @@
 </header>
 
 <body>
+	<div class="row">.</div>
+	<div class="row">.</div>
+	<div class="row">.</div>
+
+
 	<center>
 	<form action="/departamento/editar" method="POST">
 		@csrf
 		@foreach($departamento as $dep)
-		<input type="number" name="ID_DEPARTAMENTO" value='{{$dep->ID_DEPARTAMENTO}}' readonly>
+		<input type="number" name="ID_DEPARTAMENTO" value='{{$dep->ID_DEPARTAMENTO}}' readonly >
 		<input type="text" name="NOMBRE_DEPARTAMENTO"value='{{$dep->NOMBRE_DEPARTAMENTO}}' >
 		
 		@endforeach
