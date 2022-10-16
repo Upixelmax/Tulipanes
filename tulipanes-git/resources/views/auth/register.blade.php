@@ -12,6 +12,7 @@
 		<input type="email" name="email">
 		<input type="password" name="password">
 		<input type="password" name="password_confirmation">
+		
 		<input type="submit" name="Registrarse">
 
 	</form>

@@ -10,6 +10,7 @@
 		@foreach($producto as $pro)
 		<input type="number" name="ID_PRODUCTO" value='{{$pro->ID_PRODUCTO}}' readonly>
 		<input type="text" name="NOMBRE_PRODUCTO"value='{{$pro->NOMBRE_PRODUCTO}}' >
+		<input type="text" name="MARCA_PRODUCTO"value='{{$pro->MARCA_PRODUCTO}}' >
         <input type="number" name="CATEGORIA_PRODUCTO"value='{{$pro->CATEGORIA_PRODUCTO}}' >
         <input type="number" name="STOCK_PRODUCTO"value='{{$pro->STOCK_PRODUCTO}}' >
         <input type="number" name="PRECIO_PRODUCTO"value='{{$pro->PRECIO_PRODUCTO}}' >

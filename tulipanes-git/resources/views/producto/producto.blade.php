@@ -44,6 +44,7 @@
 			@csrf
 			<input type="number" name="ID_PRODUCTO" id="" placeholder="ID">
             <input type="text" name="NOMBRE_PRODUCTO" id="" placeholder="NOMBRE">
+			<input type="text" name="MARCA_PRODUCTO" id="" placeholder="MARCA">
             <input type="number" name="CATEGORIA_PRODUCTO" id="" placeholder="CATEGORIA">
             <input type="number" name="STOCK_PRODUCTO" id="" placeholder="STOCK">
             <input type="number" name="PRECIO_PRODUCTO" id="" placeholder="PRECIO">
@@ -64,6 +65,7 @@
 			<tr>
 				<td>ID</td>
 				<td>NOMBRE</td>
+				<td>MARCA</td>
                 <td>CATEGORIA</td>
                 <td>STOCK</td>
                 <td>PRECIO</td>
@@ -75,6 +77,7 @@
 			<tr>
 				<td>{{ $producto->ID_PRODUCTO }}</td>
 				<td>{{ $producto->NOMBRE_PRODUCTO }}</td>
+				<td>{{ $producto->MARCA_PRODUCTO }}</td>
                 <td>{{ $producto->CATEGORIA_PRODUCTO }}</td>
                 <td>{{ $producto->STOCK_PRODUCTO }}</td>
                 <td>{{ $producto->PRECIO_PRODUCTO }}</td>
