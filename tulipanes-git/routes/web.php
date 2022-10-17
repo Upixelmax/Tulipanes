@@ -64,4 +64,7 @@ Route::get('/producto/seleccionar_mover/{ID_PRODUCTO}', [ProductoController::cla
 
 Route::post('/producto/mover', [ProductoController::class, 'mover']);
 
+Route::get('/movimiento', [InventarioController::class, 'show']);
+
+
 
