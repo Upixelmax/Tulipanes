@@ -11,10 +11,23 @@ GLOBAL
 	border: none;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 
 /*Estilo*/
 
-*{
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
 }
 
 #nav div{
@@ -132,13 +145,45 @@ GLOBAL
 }
 
 #insertar input[type=text]{
-	background: #f9f8fa;
-}
-
-#insertar input[type=submit]{
-	background: lightgreen;
-	float: right;
-	width: 120px;
+	background: #cabacd;
 	margin-bottom: 5px;
 }
 
+
+#insertar input[type=number]{
+	text-align: center;
+}
+#insertar input[type=number]:focus{
+	outline: none;
+}
+
+#insertar input[type=submit]{
+	background: #9f0bea;
+	float: right;
+	width: 120px;
+	margin-bottom: 5px;
+	border-radius: 30px;
+
+}
+
+footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   height: 40px;   
+   background: mediumpurple;
+   text-align: center;
+   color: white;
+   padding: 10px;
+   margin-top: 40px;
+   opacity: 0.8;
+}
+
+#editar2 {
+	padding: 10px;
+	border-radius: 30px;
+	width: 100px;
+	background: #d18cde;
+	color: white;
+	float: right;
+}

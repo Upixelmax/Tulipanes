@@ -51,4 +51,5 @@
 </section>
 
 </body>
+<footer>Los Tulipanes &#174;</footer>
 </html>

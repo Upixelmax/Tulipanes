@@ -62,7 +62,7 @@
 				<input type="number" name="DEPARTAMENTO_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Departamento">
 				</div>	
 				@endforeach
-				<input type="submit" value="Editar">
+				<input id="editar2"type="submit" value="Mover">
 
 			</form>
 
@@ -71,3 +71,5 @@
 	<div class="col-1"></div>
 	
 </div>
+<footer>Los Tulipanes &#174;</footer>
+</html>
