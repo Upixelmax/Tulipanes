@@ -46,7 +46,7 @@
 				@csrf
 				@foreach($producto as $pro)
 				<div class="mb-3">
-				<label for="formGroupExampleInput" class="form-label">Id Producto</label>
+				<label for="formGroupExampleInput" class="form-label">ID Producto</label>
 				<input type="number" name="PRODUCTO_INVENTARIO" value='{{$pro->ID_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
 				</div>
 				<div class="mb-3">
@@ -58,7 +58,7 @@
 				<input type="number" name="STOCK_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Debe ser menor o igual al stock del producto">
 				</div>
 				<div class="mb-3">
-				<label for="formGroupExampleInput" class="form-label">departamento Destino</label>
+				<label for="formGroupExampleInput" class="form-label">Departamento Destino</label>
 				<input type="number" name="DEPARTAMENTO_INVENTARIO" class="form-control" id="formGroupExampleInput" placeholder="Departamento">
 				</div>	
 				@endforeach

@@ -11,6 +11,8 @@ GLOBAL
 	border: none;
 }
 
+
+
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -130,13 +132,23 @@ input[type=number] {
 #borrar{
 	background: red;
 }
+
+#borrar:hover{
+	background: white;
+}
+
 #editar{
 	background: yellow;
 }
 
+#editar:hover{
+	background: white;
+}
+
 #insertar{
-	border:2px solid purple ;
+	border:2px solid mediumpurple ;
 	font-size: 15px;
+	border-radius: 20px;
 }
 
 #insertar h3{
@@ -145,25 +157,24 @@ input[type=number] {
 }
 
 #insertar input[type=text]{
+	text-align: center;
 	background: #cabacd;
-	margin-bottom: 5px;
+	margin: 5px 5px;
 }
 
 
 #insertar input[type=number]{
 	text-align: center;
-}
-#insertar input[type=number]:focus{
-	outline: none;
+	background: #cabacd;
+	margin: 5px 5px;
 }
 
 #insertar input[type=submit]{
 	background: #9f0bea;
 	float: right;
 	width: 120px;
-	margin-bottom: 5px;
 	border-radius: 30px;
-
+	margin: 5px;
 }
 
 footer {
@@ -186,4 +197,12 @@ footer {
 	background: #d18cde;
 	color: white;
 	float: right;
+}
+
+#mover{
+	background: lightblue;
+}
+
+#mover:hover{
+	background: white;
 }

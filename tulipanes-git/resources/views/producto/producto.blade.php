@@ -38,14 +38,14 @@
 <div class="row">.</div>
 <div class="row">
 	<div class="col-1"></div>
-	<div id="idepartamento" class="col-4">
+	<div id="insertar" class="col-4">
 		<h3>Insertar producto</h3>
 		<form action="/producto" method="POST">
 			@csrf
 			<input type="number" name="ID_PRODUCTO" id="" placeholder="ID">
             <input type="text" name="NOMBRE_PRODUCTO" id="" placeholder="NOMBRE">
 			<input type="text" name="MARCA_PRODUCTO" id="" placeholder="MARCA">
-            <input type="number" name="CATEGORIA_PRODUCTO" id="" placeholder="CATEGORIA">
+            <input type="number" name="CATEGORIA_PRODUCTO" id="" placeholder="ID CATEGORIA">
             <input type="number" name="STOCK_PRODUCTO" id="" placeholder="STOCK">
             <input type="number" name="PRECIO_PRODUCTO" id="" placeholder="PRECIO">
 
