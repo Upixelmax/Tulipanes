@@ -9,6 +9,8 @@ use App\Http\Controllers\DepartamentoController;
 use App\Http\Controllers\CategoriaController;
 use App\Http\Controllers\ProductoController;
 use App\Http\Controllers\InventarioController;
+use App\Http\Controllers\HistorialController;
+
 
 
 
@@ -64,8 +66,11 @@ Route::get('/producto/seleccionar_mover/{ID_PRODUCTO}', [ProductoController::cla
 
 
 Route::post('/producto/mover', [ProductoController::class, 'mover']);
-
 Route::get('/movimiento', [InventarioController::class, 'show']);
+
+Route::get('/historial', [HistorialController::class, 'show']);
+
+
 
 
 

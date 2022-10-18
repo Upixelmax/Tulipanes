@@ -58,8 +58,11 @@ class ProductoController extends Controller
         $PRODUCTO_INVENTARIO = $request->get('PRODUCTO_INVENTARIO');
         $STOCK_INVENTARIO = $request->get('STOCK_INVENTARIO');
         $DEPARTAMENTO_INVENTARIO = $request->get('DEPARTAMENTO_INVENTARIO');
+        $ENCARGADO_INVENTARIO = auth()->user()->username;
 
         $resultado=DB::select("CALL INSERTAR_INVENTARIO(?,?,?,@RESULTADO)", [$PRODUCTO_INVENTARIO,$STOCK_INVENTARIO,$DEPARTAMENTO_INVENTARIO]);
+
+        $resultado1=DB::select("CALL INSERTAR_HISTORIAL(?,?,?,?,@RESULTADO)", [$PRODUCTO_INVENTARIO,$STOCK_INVENTARIO,$DEPARTAMENTO_INVENTARIO,$ENCARGADO_INVENTARIO]);
         return redirect('/producto')->with('resultado', $resultado);
     }  
 

@@ -10,9 +10,6 @@ use App\Models\User;
 class RegisterController extends Controller
 {
     public function show(){
-        if(Auth::check()){
-            return redirect('/home');
-        }
         return view('auth.register');
     }
     public function register(RegisterRequest $request){
