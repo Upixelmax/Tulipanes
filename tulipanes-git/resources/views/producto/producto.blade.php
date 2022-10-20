@@ -42,7 +42,7 @@
 		<h3>Insertar producto</h3>
 		<form action="/producto" method="POST">
 			@csrf
-			<input type="number" name="ID_PRODUCTO" id="" placeholder="ID">
+			<input type="number" name="ID_PRODUCTO" id="" placeholder="CODIGO">
             <input type="text" name="NOMBRE_PRODUCTO" id="" placeholder="NOMBRE">
 			<input type="text" name="MARCA_PRODUCTO" id="" placeholder="MARCA">
             <input type="number" name="CATEGORIA_PRODUCTO" id="" placeholder="ID CATEGORIA">
@@ -63,7 +63,7 @@
 	<table class="table" >
 		<thead class="cabezat">
 			<tr>
-				<td>ID</td>
+				<td>CODIGO</td>
 				<td>NOMBRE</td>
 				<td>MARCA</td>
                 <td>CATEGORIA</td>
@@ -95,6 +95,10 @@
 	</center>
 </div>
 
+
+<div class="row">.</div>
+<div class="row">.</div>
+<div class="row">.</div>
 
 
 <footer>Los Tulipanes &#174;</footer>

@@ -42,21 +42,21 @@
 				@csrf
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Nombre Usuario</label>
-				<input type="number" name="username" readonly class="form-control" id="formGroupExampleInput">
+				<input type="text" name="username"class="form-control" id="formGroupExampleInput">
 				</div>
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Email</label>
-				<input type="text" name="email" readonly class="form-control" id="formGroupExampleInput">
+				<input type="text" name="email" class="form-control" id="formGroupExampleInput">
 				</div>
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Contraseña</label>
-				<input type="text" name="password" readonly class="form-control" id="formGroupExampleInput" >
+				<input type="password" name="password"  class="form-control" id="formGroupExampleInput" >
 				</div>
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Confirmar Contraseña</label>
-				<input type="text" name="password_confirmation"class="form-control" id="formGroupExampleInput" >
+				<input type="password" name="password_confirmation"class="form-control" id="formGroupExampleInput" >
 				</div>
-				<input id="editar2"type="submit" value="Editar">
+				<input id="editar2"type="submit" value="Registrar">
 			</form>
 
 		</body>

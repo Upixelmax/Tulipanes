@@ -50,11 +50,11 @@
 				</div>
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Nombre Producto</label>
-				<input type="text" name="NOMBRE_PRODUCTO" value='{{$pro->NOMBRE_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+				<input type="text" name="NOMBRE_PRODUCTO" value='{{$pro->NOMBRE_PRODUCTO}}'class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
 				</div>
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Marca Producto</label>
-				<input type="text" name="MARCA_PRODUCTO" value='{{$pro->MARCA_PRODUCTO}}' readonly class="form-control" id="formGroupExampleInput" >
+				<input type="text" name="MARCA_PRODUCTO" value='{{$pro->MARCA_PRODUCTO}}'class="form-control" id="formGroupExampleInput" >
 				</div>
 				<div class="mb-3">
 				<label for="formGroupExampleInput" class="form-label">Categoria Producto</label>
