@@ -77,7 +77,10 @@
 		</body>
 	</div>
 	<div class="col-1"></div>
-	
+
+<div class="row">.</div>
+<div class="row">.</div>
+<div class="row">.</div>
 </div>
 <footer>Los Tulipanes &#174;</footer>
 </html>
