@@ -60,7 +60,9 @@ Route::get('/producto', [ProductoController::class, 'show']);
 Route::get('/producto/borrar/{ID_PRODUCTO}', [ProductoController::class, 'borrar']);
 Route::get('/producto/seleccionar/{ID_PRODUCTO}', [ProductoController::class, 'seleccionar']);   
 
-Route::post('/producto', [ProductoController::class, 'producto']);
+
+Route::get('/producto/insertar', function () {return view('/producto/insertar_producto');});
+Route::post('/producto/insertar', [ProductoController::class, 'producto']);
 Route::post('/producto/editar', [ProductoController::class, 'editar']);
 Route::get('/producto/seleccionar_mover/{ID_PRODUCTO}', [ProductoController::class, 'seleccionar_mover']);   
 
