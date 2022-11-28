@@ -2,12 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: open sans;
 }
-html{
-    background: #f5f5f5;
 
-}
+
+
 .body{
     background: #f5f5f5;
 
@@ -29,6 +27,7 @@ main h1{
         -moz-background-clip: text;
             background-clip: text;
 }
+
 
 .container__box{
     max-width: 1100px;
@@ -105,4 +104,14 @@ main h1{
 .i{
     text-align: center;
         
+}
+
+
+#Exit{
+    background: #f5f5f5;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 5px 5px;
+    border-radius: 5px;
 }

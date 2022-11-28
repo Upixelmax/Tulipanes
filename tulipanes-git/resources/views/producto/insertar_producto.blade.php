@@ -1,10 +1,25 @@
-<nav class="navbar navbar-dark bg-dark">
+<header class="navbar navbar-dark bg-dark">
+	<div class="col-1">
     <a class="navbar-brand" href="/home">
         <img src="/tulipanes.png" width="30" height="30" class="d-inline-block align-top" alt="">
         TULIPANES
     </a>
-    <a class="navbar-brand" href="#">INICIO <span class="sr-only"></span></a>
-</nav>
+	</div>
+	<div class="col-1"></div>
+	<div class="col-1"></div>
+  <div class="col-1"></div>
+  <div class="col-1"></div>
+  <div class="col-1"></div>
+	<div class="col-1"></div>
+  <div class="col-1"></div>
+  <div class="col-1"></div>
+  <div class="col-1"></div>
+	<div class="col-1"></div>
+	<div class="col-1" >
+		  <a id="Exit" href="/logout">Cerrar Sesión</a>
+	</div>
+</header>
+<link rel="stylesheet" href="/css/home.css">
 <link rel="stylesheet" href="/css/login.css">
 <link rel="stylesheet" href="{{url('assets/css/bootstrap.min.css')}}">
 

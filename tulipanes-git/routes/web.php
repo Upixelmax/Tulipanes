@@ -44,7 +44,8 @@ Route::get('/categoria', [CategoriaController::class, 'show']);
 Route::get('/categoria/borrar/{ID_CATEGORIA}', [CategoriaController::class, 'borrar']);
 Route::get('/categoria/seleccionar/{ID_CATEGORIA}', [CategoriaController::class, 'seleccionar']);      
                                   
-Route::post('/categoria', [CategoriaController::class, 'categoria']);
+Route::get('/categoria/insertar', function () {return view('/categoria/insertar_categoria');});
+Route::post('/categoria/insertar', [CategoriaController::class, 'categoria']);
 Route::post('/categoria/editar', [CategoriaController::class, 'editar']);
 
 
@@ -52,7 +53,8 @@ Route::get('/departamento', [DepartamentoController::class, 'show']);
 Route::get('/departamento/borrar/{ID_DEPARTAMENTO}', [DepartamentoController::class, 'borrar']);
 Route::get('/departamento/seleccionar/{ID_DEPARTAMENTO}', [DepartamentoController::class, 'seleccionar']); 
 
-Route::post('/departamento', [DepartamentoController::class, 'departamento']);
+Route::get('/departamento/insertar', function () {return view('/departamento/insertar_departamento');});
+Route::post('/departamento/insertar', [DepartamentoController::class, 'departamento']);
 Route::post('/departamento/editar', [DepartamentoController::class, 'editar']);
 
 
