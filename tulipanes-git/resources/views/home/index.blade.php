@@ -19,7 +19,7 @@
   <div class="col-1"></div>
 	<div class="col-1"></div>
 	<div class="col-1" >
-		  <a id="Exit" href="/logout">Cerrar Sesión</a>
+
 	</div>
 </header>
 
@@ -39,10 +39,10 @@
 
     <div class="container__box">
       <div class="box">
-        <a href="#">
+        <a href="/movimiento">
           <i class="lni lni-agenda"></i>
-          <h5>Inventario</h5>
-          <h4>Inventario</h4>
+          <h5>Movimiento</h5>
+          <h4>Movimiento</h4>
         </a>
       </div>
       <div class="box">
@@ -108,10 +108,10 @@
         </a>
       </div>
       <div class="box">
-        <a href="#">
-          <i class="lni lni-reload"></i>
-          <h5>Relleno 2</h5>
-          <h4>Relleno 2</h4>
+        <a href="/logout">
+          <i class="lni lni-power-switch"></i>
+          <h5>Cerrar Sesion</h5>
+          <h4>Cerrar Sesion</h4>
         </a>
       </div>
     </div>

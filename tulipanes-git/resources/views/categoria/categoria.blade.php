@@ -21,23 +21,17 @@
 </nav>
 <link rel="stylesheet" href="/css/home.css">
 <link rel="stylesheet" href="/css/login.css">
-<link rel="stylesheet" href="{{url('assets/css/bootstrap.min.css')}}">
+<link rel="stylesheet" href="{{url('assets/css/estilo.css')}}">
 
 <div class="row">.</div>
 <div class="row">.</div>
 <div class="row">.</div>
-<div class="row">
-	<div class="col-1"></div>
-	
-	<div class="col-1"></div>
-</div>
-<div class="row">.</div>
-<div class="row">.</div>
-<div class="row">.</div>
+
+
 <div class="row">
 	<div class="col-1"></div>
 	<div class="col-10">
-	<a href="/categoria/insertar">ACAAA</a>
+	
 	
 
 
@@ -54,7 +48,11 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.13.1/datatables.min.css"/>
   	</head>
   	<body>
-	
+      <h1 class="text-center">Categoria</h1>
+        <div class="mb-4">
+            <td><button type="button" id="Agregar"class="btn btn-light" onclick="window.location.href='/categoria/insertar'">Agregar Categoria</i></button></td>
+        </div>
+    
 	<table id="datatable" class="table">
         <thead class="cabezat">
             <th>Codigo</th>
@@ -65,7 +63,10 @@
                 <tr>
 					<td>{{ $categoria->ID_CATEGORIA }}</td>
 					<td>{{ $categoria->NOMBRE_CATEGORIA }}</td>
-                    <td><a class="btn">Editar</a> <a href="">Borrar</a></td>
+                    <td>
+                        <button id="borrar" class="btn btn-round" onclick="window.location.href='/categoria/borrar/{{$categoria->ID_CATEGORIA }}'">Borrar</i></button>
+					    <button id="editar" class="btn btn-round" onclick="window.location.href='/categoria/seleccionar/{{$categoria->ID_CATEGORIA}}'">Editar</i></button>
+                    </td>  
                 </tr>
 			@endforeach
             </tbody>

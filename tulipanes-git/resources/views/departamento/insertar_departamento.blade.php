@@ -1,3 +1,10 @@
+<head>
+  <meta charset="utf-8">
+  <title>Tulipanes</title>
+  <base href="/tulipanes.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="#">
+</head>
 <header class="navbar navbar-dark bg-dark">
 	<div class="col-1">
     <a class="navbar-brand" href="/home">
@@ -36,10 +43,13 @@
             </div>
 
             <div class="d-grid gap-2">
-                <button type="submit"class="btn btn-primary btn-lg" type="button">AGREGAR</button>
+                <button type="submit"class="btn btn-primary btn-lg" type="button">CONFIRMAR</button>
             </div>
 
         </form>
+        <div class="d-grid gap-2">
+                <button id ="volver"class="btn btn-primary btn-lg" type="button" onclick="window.location.href='/departamento'">ATRAS</button>
+        </div>
         
     </div>
 </div>

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
+  <title>Tulipanes</title>
+  <base href="/tulipanes.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="#">
+</head>
+<head>
+
 
 	<meta charset="utf-8">
 	<meta name="author" content="B8">
@@ -23,20 +31,24 @@
 	<!--===================================
 	LOGO y CERRAR SESIÓN
 	====================================-->
-<header id="nav" class="row">
-	<div class="col-3">
-		<a href="/home">Los Tulipanes</a>
-
+<header class="navbar navbar-dark bg-dark">
+    <div class="col-1">
+        <a class="navbar-brand" href="/home">
+            <img src="/tulipanes.png" width="30" height="30" class="d-inline-block align-top" alt="">TULIPANES
+        </a>
 	</div>
-	<div class="col-3"></div>
-	<div class="col-3"></div>
-	<div class="col-3" >
-		<button id="drop"class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    	{{auth()->user()->username}}
-  		</button>
-  		 <ul class="dropdown-menu">
-	    <li><a class="dropdown-item" href="/logout">Cerrar Sesión</a></li>
-	  	</ul>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+	<div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+    <div class="col-1"></div>
+	<div class="col-1"></div>
+	<div class="col-1" >
+		<a class="navbar-brand" id="Exit" href="/logout">Cerrar Sesión</a>
 	</div>
 </header>
 
@@ -44,33 +56,12 @@
 
 
 
-
-
-
-
 <div class="row">.</div>
 <div class="row">.</div>
 <div class="row">.</div>
 
 
-<div class="row">
-	<div class="col-1"></div>
-	<div id="insertar" class="col-4">
-		<h3>Insertar Departamento</h3>
-		<form action="/departamento" method="POST">
-			@csrf
-			<input type="text" name="NOMBRE_DEPARTAMENTO" id="" placeholder="Nombre">
 
-			<input type="submit" value="Insertar">
-		</form>
-	</div>
-	<div class="col-1"></div>
-</div>
-
-<div class="row">.</div>
-<div class="row">.</div>
-<div class="row">.</div>
-<a href="/departamento/insertar">ACAAA</a>
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -84,7 +75,10 @@
     <title>Tabla Crud</title>
   </head>
   <body>
-    <h1 class="text-center">Inventario</h1>
+    <h1 class="text-center">Departamento</h1>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2 mb-3"><button id="Agregar" class="btn btn-round" onclick="window.location.href='/departamento/insertar'">Agregar Departamento</i></button></div>
     <div class="container-fluid">
         <div class="row">
             <div class="container">
@@ -101,8 +95,11 @@
                                     <tr>
 									<td>{{ $departamento->ID_DEPARTAMENTO }}</td>
 									<td>{{ $departamento->NOMBRE_DEPARTAMENTO }}</td>
-                                    <td><button id="borrar" class="btn btn-round" onclick="window.location.href='/departamento/borrar/{{$departamento->ID_DEPARTAMENTO }}'">Borrar</i></button>
-					<button id="editar" class="btn btn-round" onclick="window.location.href='/departamento/seleccionar/{{$departamento->ID_DEPARTAMENTO}}'">Editar</i></button></td>
+                                    <td>
+                                    <button id="borrar" class="btn btn-round" onclick="window.location.href='/departamento/borrar/{{$departamento->ID_DEPARTAMENTO }}'">Borrar</i></button>
+					                <button id="editar" class="btn btn-round" onclick="window.location.href='/departamento/seleccionar/{{$departamento->ID_DEPARTAMENTO}}'">Editar</i></button>
+                                    </td>
+                    
                                     </tr>
 									@endforeach
                                 </tbody>
@@ -129,7 +126,8 @@
   </body>
 </html>
 
-
+<div class="row">.</div>
+<div class="row">.</div>
 
 
 

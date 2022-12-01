@@ -37,10 +37,13 @@
             </div>
 
             <div class="d-grid gap-2">
-                <button type="submit"class="btn btn-primary btn-lg" type="button">AGREGAR</button>
+                <button type="submit"class="btn btn-primary btn-lg" type="button">CONFIRMAR</button>
             </div>
 
         </form>
+        <div class="d-grid gap-2">
+                <button id ="volver"class="btn btn-primary btn-lg" type="button" onclick="window.location.href='/categoria'">ATRAS</button>
+        </div>
         
     </div>
 </div>
